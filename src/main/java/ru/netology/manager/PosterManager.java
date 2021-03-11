@@ -3,7 +3,14 @@ package ru.netology.manager;
 import ru.netology.domain.MoviePoster;
 
 public class PosterManager {
+	int movieCount = 7;
 	private MoviePoster[] items = new MoviePoster[0];
+
+	public PosterManager() {
+	}
+	public PosterManager(int movieCount) {
+		this.movieCount = movieCount;
+	}
 
 	public void add(MoviePoster item) {
 		int length = items.length + 1;
